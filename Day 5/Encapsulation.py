@@ -67,5 +67,4 @@ print()
 
 # Update password
 insta.set_password("1234", "5678")
-
 insta.display_archived_reels("5678")
