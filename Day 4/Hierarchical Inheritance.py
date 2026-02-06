@@ -1,7 +1,7 @@
 class BankAccount:
-    def __init__(self, account_holder, balance):
+    def __init__(self, account_holder):
         self.account_holder = account_holder
-        self.balance = balance
+        self.balance = 0
 
     def deposit(self, amount):
         self.balance += amount
@@ -40,9 +40,8 @@ class CurrentAccount(BankAccount):
         else:
             print("Overdraft limit exceeded")
 
-
-savings = SavingsAccount("Ravi", 10000, 5)
-current = CurrentAccount("Anita", 5000, 3000)
+savings = SavingsAccount("Dev", 10000, 5)
+current = CurrentAccount("Nishchitha", 5000, 3000)
 
 savings.deposit(2000)
 savings.add_interest()

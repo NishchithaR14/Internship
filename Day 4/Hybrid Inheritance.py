@@ -5,7 +5,6 @@ class Person:
     def display_person(self):
         print("Name:", self.name)
 
-
 class Student(Person):
     def __init__(self, name, student_id):
         super().__init__(name)
@@ -38,7 +37,7 @@ class CollegeStudent(Student, SportsPlayer):
 
 
 college_student = CollegeStudent(
-    "Rahul", "CS101", "Cricket", "ABC Engineering College"
+    "Nishchitha", "4mu22cs056", "Badminton", "MRIT"
 )
 
 college_student.display_college_student()
